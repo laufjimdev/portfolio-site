@@ -1,0 +1,27 @@
+.custom-navbar {
+  background-color: rgb(44, 37, 54);
+  border: 2px solid rgb(78, 72, 88);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 60px;
+  font-family: sans-serif;
+  width: 90%; /* map area width */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.navbar-title {
+    background: linear-gradient(135deg, #883C7D, #f8f4ff, #6D3C88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.navbar-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
