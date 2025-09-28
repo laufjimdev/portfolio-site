@@ -1,11 +1,32 @@
 .home{
     background-color: #191424;
+    font-size: 1.125rem;
 }
+
+.pt-8rem {
+  padding-top: 8rem;
+}
+
+.text-light-purp{
+    color: rgb(200, 185, 209); 
+}
+
+.text-purple{
+    color: #883C7D ;
+    
+}
+
+.text-dark{
+  color: #191424;
+}
+
+
 /* Gradients */
 .gradient-text {
-  background: linear-gradient(90deg, #6D3C88, #883C7D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #883C7D, #f8f4ff, #6D3C88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .btn-gradient {
@@ -36,8 +57,9 @@
 
 /* Glass effect */
 .glass-effect {
-  background: rgba(44, 37, 54, 0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Floating animation (optional) */
@@ -50,25 +72,6 @@
   50% { transform: translateY(-10px); }
 }
 
-/* Decorative circles */
-.bg-purple-circle {
-  width: 80px;
-  height: 80px;
-  background-color: rgba(109, 60, 136, 0.2);
-  border-radius: 50%;
-  top: 80px;
-  left: 40px;
-}
-
-.bg-pink-circle {
-  width: 128px;
-  height: 128px;
-  background-color: rgba(136, 60, 125, 0.1);
-  border-radius: 50%;
-  bottom: 80px;
-  right: 40px;
-  position: absolute;
-}
 
 /* Icon colors */
 .icon-color {
@@ -88,3 +91,9 @@
   width: 20px;
   height: 20px;
 }
+
+
+
+
+
+

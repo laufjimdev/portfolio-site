@@ -1,3 +1,7 @@
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 .custom-navbar {
   background-color: rgb(44, 37, 54);
   border: 2px solid rgb(78, 72, 88);
