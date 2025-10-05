@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, Code, Rocket } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="home min-vh-100 d-flex flex-column justify-content-center">
+    <div className="min-vh-100 d-flex flex-column justify-content-center">
       {/* Hero Section */}
       <section className="position-relative px-3 pt-8rem ">
         <div className="container mt-5">

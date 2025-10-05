@@ -39,7 +39,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container projects pt-8rem pb-5">
+    <div className="container pt-8rem pb-5">
       {/* Header */}
       <div className="text-center mb-5">
         <h1 className="display-4 fw-bold gradient-text mb-3">My Projects</h1>

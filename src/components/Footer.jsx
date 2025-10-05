@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-top mt-5" style={{ borderColor: "rgba(109, 60, 136, 0.3)" }}>
+    <footer className="mt-5">
       <div className="container py-5">
         <div className="text-center">
           <p className="text-body mb-3">
