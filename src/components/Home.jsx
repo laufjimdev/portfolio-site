@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Code, Rocket } from "lucide-react";
 
 
@@ -35,16 +36,16 @@ export default function Home() {
               </p>
 
               <div className="d-flex flex-column flex-sm-row gap-3">
-                <a
+                <Link to="/projects"
                   className="btn btn-gradient d-flex align-items-center justify-content-center px-4 py-3"
                 >
                   View My Work <ArrowRight className="ms-2" />
-                </a>
-                <a
+                </Link>
+                <Link to="/about"
                   className="btn btn-outline-primary-custom d-flex align-items-center justify-content-center px-4 py-3"
                 >
                   My Story
-                </a>
+                </Link>
               </div>
             </div>
 

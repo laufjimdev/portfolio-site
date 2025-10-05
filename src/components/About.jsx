@@ -3,7 +3,7 @@ import { GraduationCap, Code, Heart, Lightbulb, Target, Star } from "lucide-reac
 
 export default function About() {
   return (
-    <div className="container py-5">
+    <div className="container pt-8rem pb-5">
       <div className="mx-auto" style={{ maxWidth: "900px" }}>
         {/* Header */}
         <div className="text-center mb-5">
