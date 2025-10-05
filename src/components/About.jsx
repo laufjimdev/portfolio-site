@@ -19,7 +19,7 @@ export default function About() {
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
-                <div className="d-flex align-items-center justify-content-center bg-primary rounded-3" style={{ width: "48px", height: "48px" }}>
+                <div className="d-flex align-items-center justify-content-center bg-brand-dark rounded-3" style={{ width: "48px", height: "48px" }}>
                   <GraduationCap className="text-white" size={24} />
                 </div>
               </div>
@@ -39,7 +39,7 @@ export default function About() {
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
-                <div className="d-flex align-items-center justify-content-center bg-danger rounded-3" style={{ width: "48px", height: "48px" }}>
+                <div className="d-flex align-items-center justify-content-center bg-purple rounded-3" style={{ width: "48px", height: "48px" }}>
                   <Lightbulb className="text-white" size={24} />
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function About() {
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
-                <div className="d-flex align-items-center justify-content-center bg-dark rounded-3" style={{ width: "48px", height: "48px" }}>
+                <div className="d-flex align-items-center justify-content-center bg-brand-dark bg-opacity-25 rounded-3" style={{ width: "48px", height: "48px" }}>
                   <Code className="text-white" size={24} />
                 </div>
               </div>
@@ -90,8 +90,8 @@ export default function About() {
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
-                <div className="d-flex align-items-center justify-content-center bg-primary rounded-3" style={{ width: "48px", height: "48px" }}>
-                  <Target className="text-white" size={24} />
+                <div className="d-flex align-items-center justify-content-center bg-white bg-opacity-25 rounded-3" style={{ width: "48px", height: "48px" }}>
+                  <Target className="text-lavander" size={24} />
                 </div>
               </div>
               <div>
@@ -109,7 +109,7 @@ export default function About() {
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
-                <div className="d-flex align-items-center justify-content-center bg-danger rounded-3" style={{ width: "48px", height: "48px" }}>
+                <div className="d-flex align-items-center justify-content-center btn-gradient rounded-3" style={{ width: "48px", height: "48px" }}>
                   <Heart className="text-white" size={24} />
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function About() {
         {/* Call to Action */}
         <div className="card glass-effect rounded-4 p-4 mt-5 text-center border-0">
           <div className="d-flex justify-content-center mb-3">
-            <Star size={32} className="text-primary" />
+            <Star size={32} className="text-purple" />
           </div>
           <h3 className="h4 fw-semibold text-white mb-3">Let's Build Something Together</h3>
           <p className="text-body lead">
