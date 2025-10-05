@@ -1,0 +1,18 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$body-color:#c8b9d1;
+$body-bg: #191424; 
+
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "purple": #883C7D,
+    "lavender": #a85dd29e,
+    "brand-dark": #6D3C88
+  )
+);
+
+
+@import "bootstrap";

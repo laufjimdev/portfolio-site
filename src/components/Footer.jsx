@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-top mt-5" style={{ borderColor: "rgba(109, 60, 136, 0.3)" }}>
       <div className="container py-5">
         <div className="text-center">
-          <p className="text-muted mb-3">
+          <p className="text-body mb-3">
             Crafted with 💜 by Laura – From Industrial Engineering to Code
           </p>
           <div className="d-flex justify-content-center gap-4">

@@ -1,5 +1,6 @@
 import React from "react";
 import { ExternalLink, Github, Rocket, Calendar, Code, Sparkles } from "lucide-react";
+import "../index.css";
 
 export default function Projects() {
   const projects = [
@@ -38,11 +39,11 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container py-5">
+    <div className="container projects pt-8rem pb-5">
       {/* Header */}
       <div className="text-center mb-5">
-        <h1 className="display-4 fw-bold text-gradient mb-3">My Projects</h1>
-        <p className="lead text-muted mx-auto" style={{ maxWidth: "600px" }}>
+        <h1 className="display-4 fw-bold gradient-text mb-3">My Projects</h1>
+        <p className="text-body mx-auto" style={{ maxWidth: "600px" }}>
           From learning exercises to startup dreams - here's what I've been building
         </p>
       </div>
@@ -67,17 +68,17 @@ export default function Projects() {
                         >
                           {project.status}
                         </span>
-                        <small className="text-primary">{project.category}</small>
+                        <small className="text-lavander">{project.category}</small>
                       </div>
                       <h3 className="h4 fw-bold text-white">{project.title}</h3>
                     </div>
-                    <div className="d-flex align-items-center text-muted small">
+                    <div className="d-flex align-items-center text-purple small">
                       <Calendar size={16} className="me-1" />
                       {project.date}
                     </div>
                   </div>
 
-                  <p className="text-muted">{project.description}</p>
+                  <p className="text-body">{project.description}</p>
 
                   {/* Tech Stack */}
                   <div className="mb-3">
@@ -88,7 +89,7 @@ export default function Projects() {
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="badge rounded-pill bg-secondary bg-opacity-25 text-light me-2 mb-2"
+                          className="badge rounded-pill bg-brand-dark bg-opacity-25 text-body me-2 mb-2"
                         >
                           {tech}
                         </span>
@@ -98,12 +99,12 @@ export default function Projects() {
 
                   {/* Action Buttons */}
                   <div className="d-flex gap-3">
-                    <button className="btn btn-primary d-flex align-items-center">
+                    <button className="btn btn-brand-dark d-flex align-items-center">
                       <Github size={16} className="me-2" />
                       View Code
                     </button>
                     {project.status === "Completed" && (
-                      <button className="btn btn-outline-primary d-flex align-items-center">
+                      <button className="btn btn-outline-purple d-flex align-items-center">
                         <ExternalLink size={16} className="me-2" />
                         Live Demo
                       </button>
@@ -113,15 +114,15 @@ export default function Projects() {
 
                 {/* Project Highlights */}
                 <div className="col-lg-4">
-                  <div className="card bg-dark bg-opacity-50 rounded-4 p-3 mb-3">
+                  <div className="card glass-effect rounded-4 p-3 mb-3">
                     <h5 className="fw-semibold text-white d-flex align-items-center mb-3">
                       <Sparkles size={16} className="me-2" /> Key Highlights
                     </h5>
                     <ul className="list-unstyled">
                       {project.highlights.map((highlight, idx) => (
-                        <li key={idx} className="text-muted d-flex mb-2">
+                        <li key={idx} className="text-body d-flex mb-2">
                           <div className="me-2 mt-1">
-                            <span className="badge rounded-circle bg-primary">&nbsp;</span>
+                            <span className="badge rounded-circle bg-purple">&nbsp;</span>
                           </div>
                           {highlight}
                         </li>
@@ -130,12 +131,12 @@ export default function Projects() {
                   </div>
 
                   {project.status === "In Progress" && (
-                    <div className="card bg-dark bg-opacity-50 rounded-4 p-3">
+                    <div className="card glass-effect rounded-4 p-3">
                       <div className="d-flex align-items-center mb-2">
                         <Rocket size={20} className="text-primary me-2" />
                         <h5 className="fw-semibold text-white mb-0">Coming Soon</h5>
                       </div>
-                      <p className="text-muted small">
+                      <p className="text-body small">
                         This project is actively being developed. Follow my journey as I build my startup from the ground up!
                       </p>
                     </div>
@@ -155,7 +156,7 @@ export default function Projects() {
           </div>
         </div>
         <h3 className="fw-bold text-white">More Projects Coming Soon</h3>
-        <p className="text-muted mx-auto" style={{ maxWidth: "600px" }}>
+        <p className="text-body mx-auto" style={{ maxWidth: "600px" }}>
           As I continue my development journey, I'm constantly working on new projects. 
           Each one teaches me something new and gets me closer to my goals. Stay tuned for updates!
         </p>
