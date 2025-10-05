@@ -10,10 +10,10 @@ const Navbar = () => {
         <h1 className="navbar-title">LauDev</h1>
       </Link>
       <div className="navbar-right d-flex gap-3">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/laufjimdev" target="_blank" rel="noopener noreferrer">
           <FaGithub size={24} color="#fff" />
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/laura-jimenez-8a6592344" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={24} color="#fff" />
         </a>
       </div>

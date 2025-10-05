@@ -11,7 +11,7 @@ export default function Footer() {
           </p>
           <div className="d-flex justify-content-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/laufjimdev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none"
@@ -22,7 +22,7 @@ export default function Footer() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/laura-jimenez-8a6592344"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none"

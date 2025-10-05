@@ -99,15 +99,15 @@ export default function Projects() {
 
                   {/* Action Buttons */}
                   <div className="d-flex gap-3">
-                    <button className="btn btn-brand-dark d-flex align-items-center">
+                    <a href="https://github.com/laufjimdev/PersonalWeb" target="_blank" rel="noopener noreferrer" className="btn btn-brand-dark d-flex align-items-center">
                       <Github size={16} className="me-2" />
                       View Code
-                    </button>
+                    </a>
                     {project.status === "Completed" && (
-                      <button className="btn btn-outline-purple d-flex align-items-center">
+                      <a href="https://laufjimdev.github.io/PersonalWeb/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-purple d-flex align-items-center">
                         <ExternalLink size={16} className="me-2" />
                         Live Demo
-                      </button>
+                      </a>
                     )}
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function Projects() {
       <div className="card glass-effect rounded-4 p-4 mt-5 text-center">
         <div className="mb-3">
           <div className="bg-primary bg-opacity-25 rounded-3 p-3 mx-auto d-inline-flex">
-            <Code size={28} className="bg-brand-dark bg-opacity-25 text-body" />
+            <Code size={28} className=" bg-opacity-25 text-body" />
           </div>
         </div>
         <h3 className="fw-bold text-white">More Projects Coming Soon</h3>
