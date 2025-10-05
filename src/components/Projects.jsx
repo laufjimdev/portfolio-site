@@ -1,6 +1,6 @@
 import React from "react";
 import { ExternalLink, Github, Rocket, Calendar, Code, Sparkles } from "lucide-react";
-import "../index.css";
+
 
 export default function Projects() {
   const projects = [
@@ -63,7 +63,7 @@ export default function Projects() {
                           className={`badge me-2 ${
                             project.status === "Completed"
                               ? "bg-success bg-opacity-25 text-success"
-                              : "bg-primary bg-opacity-25 text-primary"
+                              : "bg-brand-dark bg-opacity-25 text-brand-dark"
                           }`}
                         >
                           {project.status}
@@ -133,7 +133,7 @@ export default function Projects() {
                   {project.status === "In Progress" && (
                     <div className="card glass-effect rounded-4 p-3">
                       <div className="d-flex align-items-center mb-2">
-                        <Rocket size={20} className="text-primary me-2" />
+                        <Rocket size={25} className="rocket-color me-2" />
                         <h5 className="fw-semibold text-white mb-0">Coming Soon</h5>
                       </div>
                       <p className="text-body small">
@@ -152,7 +152,7 @@ export default function Projects() {
       <div className="card glass-effect rounded-4 p-4 mt-5 text-center">
         <div className="mb-3">
           <div className="bg-primary bg-opacity-25 rounded-3 p-3 mx-auto d-inline-flex">
-            <Code size={28} className="text-primary" />
+            <Code size={28} className="bg-brand-dark bg-opacity-25 text-body" />
           </div>
         </div>
         <h3 className="fw-bold text-white">More Projects Coming Soon</h3>

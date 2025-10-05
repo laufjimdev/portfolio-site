@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Sparkles, Code, Rocket } from "lucide-react";
-import './Home.css';
+
 
 export default function Home() {
   return (
@@ -67,7 +67,7 @@ export default function Home() {
 
                     <div className="glass-effect p-3 rounded-4">
                       <div className="d-flex align-items-center mb-2">
-                        <Rocket className="me-2 rocket-color" />
+                        <Rocket size={25} className="me-2 rocket-color" />
                         <h4 className="fw-semibold text-body mb-0">Startup Project</h4>
                       </div>
                       <p className="small text-dark mb-0">
