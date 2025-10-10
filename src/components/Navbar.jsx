@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,6 +16,9 @@ const Navbar = () => {
         <a href="https://linkedin.com/in/laura-jimenez-8a6592344" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={24} color="#fff" />
         </a>
+        <Link to="/contact">
+          <FaEnvelope size={24} color="#fff" />
+        </Link>
       </div>
     </nav>
   );
