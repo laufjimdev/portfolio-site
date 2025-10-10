@@ -1,5 +1,6 @@
 import React from "react";
 import { GraduationCap, Code, Heart, Lightbulb, Target, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -98,7 +99,7 @@ export default function About() {
                 <h3 className="h4 fw-semibold text-white mb-3">Building My Future</h3>
                 <p className="text-body lead">
                   Today, I'm not just learning anymore – I'm building. My first React app was just the beginning. 
-                  I'm currently working on a startup idea that combines my engineering background with my 
+                  I'm currently working on a startup idea that combines my engineering background and my personal passions with my 
                   newfound coding skills. Every day brings new challenges and new possibilities.
                 </p>
               </div>
@@ -117,9 +118,7 @@ export default function About() {
                 <h3 className="h4 fw-semibold text-white mb-3">Beyond the Code</h3>
                 <p className="text-body lead">
                   At 28, I'm proof that it's never too late to chase a new dream. When I'm not coding, 
-                  you'll find me sketching out new app ideas, reading about the latest tech trends, 
-                  or planning my next project. I believe in authentic growth, continuous learning, 
-                  and building things that genuinely help people.
+                  you’ll probably find me out in nature — hiking, journaling by the ocean, or planning my next adventure. I love learning, creating, and exploring new perspectives. Whether it’s a book, a side project, or a quiet sunrise, I’m always searching for inspiration that connects purpose and creativity.
                 </p>
               </div>
             </div>
@@ -127,7 +126,7 @@ export default function About() {
         </div>
 
         {/* Call to Action */}
-        <div className="card glass-effect rounded-4 p-4 mt-5 text-center border-0">
+        <Link to="/contact" className="card glass-effect rounded-4 p-4 mt-5 text-center border-0" style={{ textDecoration: "none"}}>
           <div className="d-flex justify-content-center mb-3">
             <Star size={32} className="text-purple" />
           </div>
@@ -136,7 +135,7 @@ export default function About() {
             I'm always excited to connect with fellow developers, potential collaborators, 
             or anyone who shares a passion for innovative technology.
           </p>
-        </div>
+        </Link>
       </div>
     </div>
   );

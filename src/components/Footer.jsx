@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container py-5">
         <div className="text-center">
           <p className="text-body mb-3">
-            Crafted with 💜 by Laura – From Industrial Engineering to Code
+            Crafted with 💜 by Laura – Where Efficiency meets Code
           </p>
           <div className="d-flex justify-content-center gap-4">
             <a

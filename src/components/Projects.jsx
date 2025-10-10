@@ -11,7 +11,7 @@ export default function Projects() {
         "A milestone project that marked my transition from learner to builder. This application showcases fundamental React concepts and represents countless hours of dedicated learning.",
       tech: ["React", "JavaScript", "CSS", "HTML"],
       status: "Completed",
-      date: "2 weeks ago",
+      date: "Summer 2025",
       category: "Learning Project",
       highlights: [
         "Component-based architecture",

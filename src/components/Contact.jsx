@@ -179,7 +179,7 @@ ${formData.message}
           <div className="rounded-4 p-4 glass-effect text-white">
             <h2 className="h4 mb-4">Follow my journey</h2>
             <a
-              href="https://github.com"
+              href="https://github.com/laufjimdev"
               target="_blank"
               rel="noopener noreferrer"
               className="d-flex align-items-center text-decoration-none text-white mb-3 p-2 rounded-3"
@@ -197,7 +197,7 @@ ${formData.message}
             </a>
 
             <a
-              href="https://linkedin.com"
+              href=""https://linkedin.com/in/laura-jimenez-8a6592344"
               target="_blank"
               rel="noopener noreferrer"
               className="d-flex align-items-center text-decoration-none text-white p-2 rounded-3"

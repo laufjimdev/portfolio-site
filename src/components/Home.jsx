@@ -24,13 +24,12 @@ export default function Home() {
                 </h1>
 
                 <p className="lead text-body">
-                  From blueprints to code.<br />
-                  <span className="text-purple">Industrial Engineer turned Developer</span>
+                  Where efficiency meets code<br />
+                  <span className="text-purple">Industrial Engineer and Developer</span>
                 </p>
               </div>
 
               <p className="text-body mb-4">
-                After 2 years of dedicated learning and just building my first React app, 
                 I'm passionate about creating meaningful digital experiences. 
                 Currently working on my startup idea while exploring the endless possibilities of code.
               </p>
@@ -62,7 +61,7 @@ export default function Home() {
                     <div className="glass-effect p-3 rounded-4 mb-2">
                       <h4 className="fw-semibold text-body mb-2">First React App ✨</h4>
                       <p className="small text-dark mb-0">
-                        Just completed 2 weeks ago - a milestone in my coding journey
+                        A milestone in my coding journey
                       </p>
                     </div>
 
