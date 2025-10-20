@@ -84,18 +84,18 @@ export default function Home() {
       </section>
 
       {/* Quick Stats */}
-      <section className="px-3 py-5">
+      <section className="px-3 py-5 justify-content-center">
         <div className="container">
-          <div className="row gap-5 text-center">
-            <div className="col-md-4 glass-effect p-4 rounded-4">
+          <div className="d-flex flex-column flex-md-row gap-4">
+            <div className="col-12 col-md-4 glass-effect p-4 text-center shadow-lg rounded-4">
               <div className="display-6 fw-bolder gradient-text mb-2">2</div>
               <p className="text-body mb-0">Years Learning</p>
             </div>
-            <div className="col-md-4 glass-effect p-4 rounded-4">
+            <div className="col-12 col-md-4 glass-effect p-4 text-center shadow-lg rounded-4">
               <div className="display-6 fw-bolder gradient-text mb-2">1</div>
               <p className="text-body mb-0">React App Built</p>
             </div>
-            <div className="col-md-4 glass-effect p-4 rounded-4">
+            <div className="col-12 col-md-4 glass-effect p-4 text-center shadow-lg rounded-4">
               <div className="display-6 fw-bolder gradient-text mb-2">∞</div>
               <p className="text-body mb-0">Dreams to Code</p>
             </div>
