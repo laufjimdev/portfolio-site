@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Github, Linkedin, Send, MessageCircle, Coffee } from "lucide-react";
 
-
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -11,27 +10,34 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  // Formspree endpoint
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjkjklyq";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    try {
-      await SendEmail({
-        to: "your-email@example.com",
-        subject: `Portfolio Contact: ${formData.subject}`,
-        body: `
-Name: ${formData.name}
-Email: ${formData.email}
-Subject: ${formData.subject}
+    setError("");
 
-Message:
-${formData.message}
-        `,
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      console.error("Error sending email:", error);
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Failed to send message. Please try again later.");
+      console.error("Error sending email:", err);
     }
     setIsSubmitting(false);
   };
@@ -76,7 +82,13 @@ ${formData.message}
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <div>
+                {error && (
+                  <div className="alert alert-danger mb-3" role="alert">
+                    {error}
+                  </div>
+                )}
+
                 <div className="row g-3">
                   <div className="col-md-6">
                     <label className="form-label text-body">Name</label>
@@ -128,7 +140,7 @@ ${formData.message}
                   </div>
                   <div className="col-12">
                     <button
-                      type="submit"
+                      onClick={handleSubmit}
                       disabled={isSubmitting}
                       className="btn w-100 text-white py-2"
                       style={{
@@ -145,7 +157,7 @@ ${formData.message}
                     </button>
                   </div>
                 </div>
-              </form>
+              </div>
             )}
           </div>
         </div>
@@ -170,7 +182,7 @@ ${formData.message}
               </div>
               <div>
                 <p className="mb-1 text-secondary">Let's grab coffee</p>
-                <p className="mb-0 text-purple" >Virtual or in-person meetups</p>
+                <p className="mb-0 text-purple">Virtual or in-person meetups</p>
               </div>
             </div>
           </div>
@@ -197,7 +209,7 @@ ${formData.message}
             </a>
 
             <a
-              href=""https://linkedin.com/in/laura-jimenez-8a6592344"
+              href="https://linkedin.com/in/laura-jimenez-8a6592344"
               target="_blank"
               rel="noopener noreferrer"
               className="d-flex align-items-center text-decoration-none text-white p-2 rounded-3"
