@@ -4,6 +4,19 @@ import { ArrowRight, Sparkles, Code, Rocket } from "lucide-react";
 
 
 export default function Home() {
+  const getYearsLearning = () => {
+    const learningStartDate = new Date(2023, 6, 1);
+    const today = new Date();
+    let years = today.getFullYear() - learningStartDate.getFullYear();
+    const m = today.getMonth() - learningStartDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < learningStartDate.getDate())) {
+      years--;
+    }
+
+    return Math.max(years, 0);
+  };
+
   return (
     <div className="min-vh-100 d-flex flex-column justify-content-center">
       {/* Hero Section */}
@@ -88,7 +101,7 @@ export default function Home() {
         <div className="container">
           <div className="d-flex flex-column flex-md-row gap-4">
             <div className="col-12 col-md-4 glass-effect p-4 text-center shadow-lg rounded-4">
-              <div className="display-6 fw-bolder gradient-text mb-2">2</div>
+              <div className="display-6 fw-bolder gradient-text mb-2">{getYearsLearning()}</div>
               <p className="text-body mb-0">Years Learning</p>
             </div>
             <div className="col-12 col-md-4 glass-effect p-4 text-center shadow-lg rounded-4">

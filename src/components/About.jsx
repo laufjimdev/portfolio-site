@@ -3,6 +3,20 @@ import { GraduationCap, Code, Heart, Lightbulb, Target, Star } from "lucide-reac
 import { Link } from "react-router-dom";
 
 export default function About() {
+  const birthDate = new Date(1996, 10, 1); // November 1, 1996
+
+  const getAge = () => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    return age;
+  };
+
   return (
     <div className="container pt-8rem pb-5">
       <div className="mx-auto" style={{ maxWidth: "900px" }}>
@@ -117,7 +131,7 @@ export default function About() {
               <div>
                 <h3 className="h4 fw-semibold text-white mb-3">Beyond the Code</h3>
                 <p className="text-body lead">
-                  At 28, I'm proof that it's never too late to chase a new dream. When I'm not coding, 
+                  At {getAge()}, I'm proof that it's never too late to chase a new dream. When I'm not coding, 
                   you’ll probably find me out in nature — hiking, journaling by the ocean, or planning my next adventure. I love learning, creating, and exploring new perspectives. Whether it’s a book, a side project, or a quiet sunrise, I’m always searching for inspiration that connects purpose and creativity.
                 </p>
               </div>

@@ -22,18 +22,19 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Startup Project (In Development)",
+      title: "Healing App — Emotional Wellness Platform (In Development)",
       description:
-        "An ambitious project combining my industrial engineering background with modern web development. Currently in active development with plans to launch as a startup.",
+        "A digital wellness project focused on creating a safer, more supportive social experience for people going through heartbreak, grief, or emotional low points. The platform emphasizes positive, healing-oriented content and intentional user experience design.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       status: "In Progress",
       date: "Ongoing",
       category: "Startup",
       highlights: [
-        "Full-stack development",
-        "User authentication system",
-        "Database design and optimization",
-        "Business logic implementation",
+        "End-to-end full-stack development",
+        "Emotionally safe UX and content flows",
+        "User onboarding and personalization logic",
+        "Community-focused feature design",
+        "Early-stage product validation and user research"
       ],
     },
   ];

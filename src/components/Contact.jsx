@@ -33,7 +33,7 @@ export default function Contact() {
         setSubmitted(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setError("Something went wrong. Please try again.");
+        setError("Something went wrong. Please make sure all the information is filled out correctly and try again.");
       }
     } catch (err) {
       setError("Failed to send message. Please try again later.");
@@ -72,11 +72,11 @@ export default function Contact() {
               <div className="text-center py-4">
                 <div className="d-flex justify-content-center align-items-center mb-3"
                      style={{ width: "64px", height: "64px", backgroundColor: "rgba(0,255,0,0.1)", borderRadius: "50%", margin: "0 auto" }}>
-                  <Send className="text-success" size={28} />
+                  <Send className="text-success" size={28}/>
                 </div>
                 <h3 className="fw-semibold">Message Sent!</h3>
-                <p className="text-muted">Thank you for reaching out. I'll get back to you as soon as possible!</p>
-                <button className="btn btn-primary" style={{ backgroundColor: "#6D3C88" }}
+                <p className="text-body">Thank you for reaching out. I'll get back to you as soon as possible!</p>
+                <button className="btn btn-primary" style={{ backgroundColor: "#6D3C88", border: "none" }}
                         onClick={() => setSubmitted(false)}>
                   Send Another Message
                 </button>
@@ -173,7 +173,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="mb-1 text-secondary">Email me directly</p>
-                <p className="mb-0 text-purple">laura.dev@example.com</p>
+                <a href="mailto:laufjimdev@gmail.com" className="mb-0 text-purple">laufjimdev@gmail.com</a>
               </div>
             </div>
             <div className="d-flex align-items-center">
