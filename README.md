@@ -8,7 +8,7 @@ The goal of this project is to demonstrate my ability to design, build, and main
 
 ## 🚀 Live Demo
 
-[Add your deployed link here]
+[Portfolio Site (Click Here)](https://laufjimdev.github.io/portfolio-site/)
 
 ---
 
