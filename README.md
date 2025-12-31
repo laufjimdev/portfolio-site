@@ -18,7 +18,6 @@ The goal of this project is to demonstrate my ability to design, build, and main
 - **JavaScript (ES6+)**
 - **HTML5 / CSS3**
 - **Bootstrap / Custom CSS**
-- **Node.js** (development tooling)
 - **Git & GitHub**
 
 ---
@@ -45,18 +44,6 @@ This project was built using my **own React knowledge**, with **AI-assisted supp
 - Learning reinforcement and best practices
 
 AI was used as a **learning accelerator and productivity tool**, not as a replacement for understanding or implementation.
-
----
-
-## 📁 Project Structure
-
-src/
-├── components/ # Reusable UI components
-├── pages/ # Main sections (Home, About, Projects, etc.)
-├── assets/ # Images and static files
-├── styles/ # Custom styles
-├── utils/ # Helper functions (dynamic values, logic)
-└── App.js
 
 ---
 
