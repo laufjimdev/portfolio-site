@@ -1,51 +1,36 @@
 import React from "react";
-import { GraduationCap, Code, Heart, Lightbulb, Target, Star } from "lucide-react";
+import { DatabaseBackup, Blocks, Heart, Route, Target, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function About() {
-  const birthDate = new Date(1996, 10, 1); // November 1, 1996
-
-  const getAge = () => {
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-
-    return age;
-  };
-
+  
   return (
     <div className="container pt-8rem pb-5">
       <div className="mx-auto" style={{ maxWidth: "900px" }}>
         {/* Header */}
         <div className="text-center mb-5">
           <h1 className="display-4 fw-bold gradient-text mb-3">My Story</h1>
-          <p className="lead text-body mx-auto" style={{ maxWidth: "600px" }}>
-            The journey from designing systems to coding dreams – here's how I discovered my passion for development
-          </p>
+          
         </div>
 
         {/* Story Timeline */}
         <div className="d-flex flex-column gap-5">
-          {/* Industrial Engineering Background */}
           <div className="card glass-effect rounded-4 p-4 border-0">
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
                 <div className="d-flex align-items-center justify-content-center bg-brand-dark rounded-3" style={{ width: "48px", height: "48px" }}>
-                  <GraduationCap className="text-white" size={24} />
+                  <DatabaseBackup className="text-white" size={24} />
                 </div>
               </div>
               <div>
-                <h3 className="h4 fw-semibold text-white mb-3">Industrial Engineering Foundation</h3>
+                <h3 className="h4 fw-semibold text-white mb-3">Engineering Systems, Data, and Continuous Improvement</h3>
                 <p className="text-body lead">
-                  My journey began with Industrial Engineering, where I learned to optimize systems, 
-                  analyze processes, and solve complex problems. This analytical mindset became the 
-                  perfect foundation for my transition into software development – after all, 
-                  coding is just another way of designing efficient systems.
-                </p>
+                  My journey began with Industrial Engineering, where I learned to analyze processes, optimize systems, and solve complex operational problems. That experience taught me to think in terms of efficiency, scalability, and measurable outcomes—principles that continue to shape how I approach technology today.
+              </p>
+
+              <p className="text-body lead">
+                  Over time, I became increasingly interested in the technical side of solving problems. I started studying software development to better understand how modern applications are built and how technology can automate complex workflows. Through that process, I discovered that the work I enjoyed most wasn't necessarily building user interfaces—it was working with data, automation, and systems behind the scenes.
+              </p>
               </div>
             </div>
           </div>
@@ -55,16 +40,19 @@ export default function About() {
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
                 <div className="d-flex align-items-center justify-content-center bg-purple rounded-3" style={{ width: "48px", height: "48px" }}>
-                  <Lightbulb className="text-white" size={24} />
+                  <Route className="text-white" size={24} />
                 </div>
               </div>
               <div>
-                <h3 className="h4 fw-semibold text-white mb-3">The Spark</h3>
+                <h3 className="h4 fw-semibold text-white mb-3">Finding the Right Path</h3>
                 <p className="text-body lead">
-                  Two years ago, I realized that the future I envisioned required more than traditional 
-                  engineering. I wanted to build things that could reach people instantly, solve problems 
-                  at scale, and create experiences that matter. That's when I decided to dive headfirst 
-                  into the world of programming.
+                  After exploring software development, I decided to focus my efforts on Data Engineering.
+                </p>
+                <p className="text-body lead">
+                  The transition felt like a natural progression rather than a complete career change. Data engineering combines many of the things that originally attracted me to Industrial Engineering: process optimization, systems thinking, problem-solving, and creating reliable solutions that support decision-making at scale.
+                </p>
+                <p className="text-body lead">
+                  Today, my learning focuses on SQL, Python, data modeling, ETL/ELT pipelines, data warehousing, cloud technologies, and workflow automation.
                 </p>
               </div>
             </div>
@@ -75,21 +63,22 @@ export default function About() {
             <div className="d-flex gap-3">
               <div className="flex-shrink-0">
                 <div className="d-flex align-items-center justify-content-center bg-brand-dark bg-opacity-25 rounded-3" style={{ width: "48px", height: "48px" }}>
-                  <Code className="text-white" size={24} />
+                  <Blocks className="text-white" size={24} />
                 </div>
               </div>
               <div>
-                <h3 className="h4 fw-semibold text-white mb-3">The Learning Marathon</h3>
+                <h3 className="h4 fw-semibold text-white mb-3">The Learning Journey</h3>
                 <p className="text-body lead mb-3">
-                  For the past two years, I've been completely immersed in learning. From HTML and CSS 
-                  to JavaScript and React, every late night and weekend has been an investment in this dream. 
-                  The moment I built my first React app just two weeks ago – seeing my code come to life 
-                  in the browser – was pure magic.
+                  For the past several years, I've invested significant time in developing technical skills through structured learning and hands-on projects. </p>
+                <p className="text-body lead mb-3">
+                  I believe the best way to learn is by building. Every project is an opportunity to apply new concepts, make mistakes, improve, and deepen my understanding of how data systems work in real-world environments.</p>
+                <p className="text-body lead mb-3">
+                  This portfolio documents that journey—showcasing both completed projects and the progression of skills I'm developing along the way.
                 </p>
 
                 {/* Tech grid */}
                 <div className="row g-3 mt-3">
-                  {["JavaScript", "React", "HTML/CSS", "Node.js"].map((tech) => (
+                  {["Python", "SQL", "Data Pipelines", "Cloud Solutions"].map((tech) => (
                     <div key={tech} className="col-6 col-md-3">
                       <div className="card glass-effect text-center p-2 border-0 rounded-3">
                         <span className="text-body fw-medium">{tech}</span>
@@ -110,11 +99,13 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h3 className="h4 fw-semibold text-white mb-3">Building My Future</h3>
+                <h3 className="h4 fw-semibold text-white mb-3">Building What's Next</h3>
                 <p className="text-body lead">
-                  Today, I'm not just learning anymore – I'm building. My first React app was just the beginning. 
-                  I'm currently working on a startup idea that combines my engineering background and my personal passions with my 
-                  newfound coding skills. Every day brings new challenges and new possibilities.
+                  My goal is to become a data engineer who can bridge business needs with technical solutions.
+                <p className="text-body lead">
+                  By combining my Industrial Engineering background with modern data engineering practices, I hope to help organizations transform raw data into reliable systems, efficient processes, and actionable insights.</p>
+                <p className="text-body lead">
+                  Every project I build is another step toward that goal.</p>
                 </p>
               </div>
             </div>
@@ -129,10 +120,9 @@ export default function About() {
                 </div>
               </div>
               <div>
-                <h3 className="h4 fw-semibold text-white mb-3">Beyond the Code</h3>
+                <h3 className="h4 fw-semibold text-white mb-3">Beyond Technology</h3>
                 <p className="text-body lead">
-                  At {getAge()}, I'm proof that it's never too late to chase a new dream. When I'm not coding, 
-                  you’ll probably find me out in nature — hiking, journaling by the ocean, or planning my next adventure. I love learning, creating, and exploring new perspectives. Whether it’s a book, a side project, or a quiet sunrise, I’m always searching for inspiration that connects purpose and creativity.
+                  When I'm not at my computer, you’ll probably find me out in nature — hiking, journaling by the ocean, or planning my next adventure. I love learning, creating, and exploring new perspectives. Whether it’s a book, a side project, or a quiet sunrise, I’m always searching for inspiration that connects purpose and creativity.
                 </p>
               </div>
             </div>
@@ -144,10 +134,9 @@ export default function About() {
           <div className="d-flex justify-content-center mb-3">
             <Star size={32} className="text-purple" />
           </div>
-          <h3 className="h4 fw-semibold text-white mb-3">Let's Build Something Together</h3>
+          <h3 className="h4 fw-semibold text-white mb-3">Let's Connect</h3>
           <p className="text-body lead">
-            I'm always excited to connect with fellow developers, potential collaborators, 
-            or anyone who shares a passion for innovative technology.
+            I'm always interested in connecting with other professionals, learners, and builders who are passionate about technology, data, and continuous improvement.
           </p>
         </Link>
       </div>
