@@ -54,8 +54,7 @@ export default function Contact() {
           Let's Connect
         </h1>
         <p className="lead text-body mx-auto">
-          I'm always excited to discuss new opportunities, collaborate on projects, 
-          or simply chat about the journey from engineering to development.
+          I'm always excited to discuss new opportunities, collaborate on projects, or simply chat about the journey of transitioning careers.
         </p>
       </div>
 
@@ -237,7 +236,7 @@ export default function Contact() {
               </li>
               <li className="d-flex align-items-center mb-2">
                 <span className="badge rounded-circle me-2" style={{ backgroundColor: "#6D3C88", width: "10px", height: "15px" }}>&nbsp;</span>
-                <span className="text-body">Building my startup</span>
+                <span className="text-body">Transitioning to Data Engineering</span>
               </li>
               <li className="d-flex align-items-center">
                 <span className="badge rounded-circle me-2" style={{ backgroundColor: "#473C88", width: "10px", height: "15px" }}>&nbsp;</span>
