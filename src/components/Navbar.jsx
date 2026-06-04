@@ -32,11 +32,11 @@ const Navbar = () => {
           <NavLink to="/" end className="nav-link d-flex align-items-center gap-2">
             <FaHome /> Home
           </NavLink>
-          <NavLink to="/about" className="nav-link d-flex align-items-center gap-2">
-            <FaUser /> About
-          </NavLink>
           <NavLink to="/projects" className="nav-link d-flex align-items-center gap-2">
             <FaFolderOpen /> Projects
+          </NavLink>
+          <NavLink to="/about" className="nav-link d-flex align-items-center gap-2">
+            <FaUser /> About
           </NavLink>
           <NavLink to="/contact" className="nav-link d-flex align-items-center gap-2">
             <FaEnvelope /> Contact
