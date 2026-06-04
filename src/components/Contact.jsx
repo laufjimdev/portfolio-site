@@ -177,11 +177,14 @@ export default function Contact() {
             </div>
             <div className="d-flex align-items-center">
               <div className="p-2 rounded-3 me-3" style={{ backgroundColor: "#883C7D" }}>
-                <Coffee size={24} className="text-white" />
+                <Linkedin size={20} className="text-white" />
               </div>
               <div>
-                <p className="mb-1 text-secondary">Let's grab coffee</p>
-                <p className="mb-0 text-purple">Virtual or in-person meetups</p>
+                <p className="mb-1 text-secondary">LinkedIn</p>
+                <a 
+                  href="https://linkedin.com/in/laura-jimenez-8a6592344"
+                  target="_blank"
+                  rel="noopener noreferrer" className="mb-0 text-purple">Professional updates</a>
               </div>
             </div>
           </div>
@@ -204,24 +207,6 @@ export default function Contact() {
               <div>
                 <p className="mb-0 fw-semibold">GitHub</p>
                 <small className="text-purple">Check out my code</small>
-              </div>
-            </a>
-
-            <a
-              href="https://linkedin.com/in/laura-jimenez-8a6592344"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="d-flex align-items-center text-decoration-none text-white p-2 rounded-3"
-              style={{ transition: "background 0.3s" }}
-              onMouseOver={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.1)")}
-              onMouseOut={(e) => (e.currentTarget.style.background = "transparent")}
-            >
-              <div className="p-2 glass-effect rounded-3 me-3 d-flex align-items-center justify-content-center">
-                <Linkedin size={20} />
-              </div>
-              <div>
-                <p className="mb-0 fw-semibold">LinkedIn</p>
-                <small className="text-purple">Professional updates</small>
               </div>
             </a>
           </div>
