@@ -22,7 +22,7 @@ export default function Footer() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/laura-jimenez-8a6592344"
+              href="https://www.linkedin.com/in/laufjim/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none"

@@ -16,14 +16,14 @@ const Navbar = () => {
 
         {/* ===== MOBILE VERSION (icons only) ===== */}
         <div className="d-flex gap-3 d-md-none">
-          <a href="https://github.com/laufjimdev" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={22} color="#fff" />
+          <a href="https://github.com/laufjimdev" target="_blank" rel="noopener noreferrer" className="mobile-nav-icon">
+            <FaGithub size={22} />
           </a>
-          <a href="https://linkedin.com/in/laura-jimenez-8a6592344" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={22} color="#fff" />
+          <a href="https://www.linkedin.com/in/laufjim/" target="_blank" rel="noopener noreferrer" className="mobile-nav-icon">
+            <FaLinkedin size={22} />
           </a>
-          <NavLink to="/contact">
-            <FaEnvelope size={22} color="#fff" />
+          <NavLink to="/contact" className="mobile-nav-icon">
+            <FaEnvelope size={22} />
           </NavLink>
         </div>
 

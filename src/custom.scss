@@ -1,45 +1,84 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
-$body-color:#c8b9d1;
-$body-bg: #191424; 
-
-
 $theme-colors: map-merge(
   $theme-colors,
   (
-    "purple": #883C7D,
-    "lavender": #a85dd29e,
+    "purple":     #883C7D,
+    "lavender":   #a85dd29e,
     "brand-dark": #6D3C88
   )
 );
 
 @import "bootstrap";
 
-// Custom styles
+/* ── Theme tokens ───────────────────────────────────────────────── */
+:root,
+[data-theme="day"] {
+  --body-bg:        #f5f0fa;
+  --body-color:     #2d1f3a;
+  --glass-bg:       rgba(136, 60, 125, 0.07);
+  --glass-border:   rgba(136, 60, 125, 0.15);
+  --outline-color:  #4a1a5e;
+  --footer-border:  rgba(136, 60, 125, 0.25);
+  --text-dark:      #2d1f3a;
+}
 
-:root{
-    
-    font-size: 1.125rem;
+[data-theme="dark"] {
+  --body-bg:        #191424;
+  --body-color:     rgb(200, 185, 209);
+  --bs-body-color:  rgb(200, 185, 209);
+  --bs-body-color-rgb:    200, 185, 209;
+  --glass-bg:       rgba(255, 255, 255, 0.1);
+  --glass-border:   rgba(255, 255, 255, 0.2);
+  --outline-color:  #c8b9d1;
+  --footer-border:  rgba(200, 185, 209, 0.33);
+  --text-dark:      #191424;
+}
+
+/* ── Base ───────────────────────────────────────────────────────── */
+:root {
+  font-size: 1.125rem;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .pt-8rem {
   padding-top: 8rem;
 }
 
-.text-dark{
-  color: #191424;
+.text-dark {
+  color: var(--text-dark);
 }
 
+/* ── Light Text for day mode ─────────────────────────────────────────────── */
 
-/* Gradients */
+[data-theme="day"] .text-white {
+  color: #2d1f3a !important;
+  -webkit-text-fill-color: #2d1f3a !important;
+}
+
+/* ── Gradients ──────────────────────────────────────────────────── */
 .gradient-text {
   background: linear-gradient(135deg, #883C7D, #f8f4ff, #6D3C88);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+[data-theme="day"] .gradient-text {
+  background: linear-gradient(135deg, #883C7D, #4a1a5e, #6D3C88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* ── Buttons ────────────────────────────────────────────────────── */
 .btn-gradient {
   background: linear-gradient(90deg, #6D3C88, #883C7D);
   color: white;
@@ -50,12 +89,12 @@ $theme-colors: map-merge(
 
 .btn-gradient:hover {
   transform: scale(1.05);
-  box-shadow: 0 0.5rem 1rem rgba(109, 60, 136, 0.25);
+  box-shadow: 0 0.5rem 1rem rgba(109, 60, 136, 0.3);
 }
 
 .btn-outline-primary-custom {
   border: 2px solid #883C7D;
-  color: #c8b9d1;
+  color: var(--outline-color);
   border-radius: 1.5rem;
   font-weight: 600;
   transition: all 0.3s;
@@ -63,28 +102,29 @@ $theme-colors: map-merge(
 
 .btn-outline-primary-custom:hover {
   color: white;
+  background-color: #6D3C88;
   border-color: #6D3C88;
 }
 
-/* Glass effect */
+/* ── Glass effect ───────────────────────────────────────────────── */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--glass-border);
+  transition: background 0.4s ease, border-color 0.4s ease;
 }
 
-/* Floating animation */
+/* ── Floating animation ─────────────────────────────────────────── */
 .floating-animation {
   animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(); }
-  50% { transform: translateY(-20px); }
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-20px); }
 }
 
-
-/* Icon colors */
+/* ── Icon colors ────────────────────────────────────────────────── */
 .icon-color {
   color: #883C7D;
   width: 32px;
@@ -95,22 +135,14 @@ $theme-colors: map-merge(
   color: #473C88;
 }
 
-/* Sparkles text */
+/* ── Sparkles text ──────────────────────────────────────────────── */
 .sparkles-text svg {
   width: 20px;
   height: 20px;
 }
 
+/* ── Footer ─────────────────────────────────────────────────────── */
 footer {
-  border-top: 1px solid #c8b9d153;
+  border-top: 1px solid var(--footer-border);
+  transition: border-color 0.4s ease;
 }
-
-
-
-
-
-
-
-
-
-

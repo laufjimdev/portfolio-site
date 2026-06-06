@@ -182,7 +182,7 @@ export default function Contact() {
               <div>
                 <p className="mb-1 text-secondary">LinkedIn</p>
                 <a 
-                  href="https://linkedin.com/in/laura-jimenez-8a6592344"
+                  href="https://www.linkedin.com/in/laufjim/"
                   target="_blank"
                   rel="noopener noreferrer" className="mb-0 text-purple">Professional updates</a>
               </div>

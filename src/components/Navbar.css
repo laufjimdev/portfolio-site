@@ -1,49 +1,123 @@
-h1{
-    font-size: 1.5rem;
-    font-weight: 700;
+/* ── Navbar base (shared) ───────────────────────────────────────── */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
+
 .custom-navbar {
-  background-color: rgb(44, 37, 54);
-  border: 2px solid rgb(78, 72, 88);
   border-radius: 10px;
   margin-top: 20px;
   height: 60px;
   font-family: sans-serif;
-  width: 90%; 
+  width: 90%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
+/* ── Dark mode navbar ───────────────────────────────────────────── */
+[data-theme="dark"] .custom-navbar {
+  background-color: rgb(44, 37, 54);
+  border: 2px solid rgb(78, 72, 88);
+}
+
+/* ── Day mode navbar ────────────────────────────────────────────── */
+[data-theme="day"] .custom-navbar {
+  background-color: rgba(245, 240, 250, 0.85);
+  border: 2px solid rgba(136, 60, 125, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+/* ── Navbar title gradient ──────────────────────────────────────── */
 .navbar-title {
-    background: linear-gradient(135deg, #883C7D, #f8f4ff, #6D3C88);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin: 0;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 0;
 }
 
+[data-theme="dark"] .navbar-title {
+  background-image: linear-gradient(135deg, #883C7D, #f8f4ff, #6D3C88);
+}
+
+[data-theme="day"] .navbar-title {
+  background-image: linear-gradient(135deg, #883C7D, #2d1f3a, #6D3C88);
+}
+
+/* ── Nav links ──────────────────────────────────────────────────── */
 .navbar-right a {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
+
 .nav-link {
   font-weight: 500;
-  color: #fff;
   transition: color 0.2s ease, border-bottom 0.2s ease;
   padding-bottom: 2px;
 }
 
-.nav-link:hover {
+[data-theme="dark"] .nav-link {
+  color: #fff;
+}
+
+[data-theme="day"] .nav-link {
+  color: #2d1f3a;
+  -webkit-text-stroke: 0.3px #2d1f3a;
+}
+
+/* ── Nav link hover ─────────────────────────────────────────────── */
+[data-theme="dark"] .nav-link:hover {
   color: #c8b9d1;
   text-decoration: none;
 }
 
+[data-theme="day"] .nav-link:hover {
+  color: #883C7D;
+  text-decoration: none;
+}
+
+/* ── Active link ────────────────────────────────────────────────── */
 .nav-link.active {
-  background-color: #883c7d99;
-  color: #fff;
   border-radius: 8px;
   padding: 6px 12px;
+}
+
+[data-theme="dark"] .nav-link.active {
+  background-color: #883c7d99;
+  color: #fff;
+}
+
+[data-theme="day"] .nav-link.active {
+  background-color: rgba(136, 60, 125, 0.12);
+  color: #6D3C88;
+  -webkit-text-stroke: 0.3px #4a1a5e;
+}
+
+/* ── Mobile icons ────────────────────────────────────────────────── */
+
+.mobile-nav-icon {
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .mobile-nav-icon {
+  color: #fff;
+}
+
+[data-theme="day"] .mobile-nav-icon {
+  color: #2d1f3a;
+}
+
+[data-theme="day"] .mobile-nav-icon:hover {
+  color: #883C7D;
+}
+
+[data-theme="dark"] .mobile-nav-icon:hover {
+  color: #c8b9d1;
 }
