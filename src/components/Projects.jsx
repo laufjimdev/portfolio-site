@@ -224,7 +224,7 @@ export default function Projects() {
         <h3 className="fw-bold text-white">More Projects Coming Soon</h3>
 
         <p className="text-body mx-auto" style={{ maxWidth: "600px" }}>
-          As I continue my development journey, I'm constantly working on new
+          As I continue my learning journey, I'm constantly working on new
           projects. Each one teaches me something new and gets me closer to my
           goals. Stay tuned for updates!
         </p>
